@@ -35,12 +35,12 @@ npm i -g https://get_ao.g8way.io
 
 > [Buradaki](https://github.com/ruesandora/AO/blob/main/chatroom.md) repo'da User / Root kısmına kadar yapmamız yeterli.
 
-<h1 align="center"> Parallel Everene Giriş </h1>
+<h1 align="center"> Parallel Everene Giriş #1 - Price Botu </h1>
 
 ```console
 # sunucumuzda çalıtırıyoruz
 aos orbit --cron 30-seconds
-# proeses ID'imizi kaydediyoruz.
+# proeses IDimizi kaydediyoruz.
 ```
 
 > Aşağıya yazacağım kodu girmeden önce Visual'dan new file diyoruz.
@@ -108,5 +108,55 @@ Handlers.add("ReceiveData",
     end
 )
 ```
+
+> Sunucunmuza geri dönüp:
+
+```console
+# dosyayı load ediyoruz
+.load 0rbit-Price-Feed.lua
+
+# monitoru çalıştırıyoruz
+.monitor
+
+# eth fiyatını çekiyoruz
+Send({ Target = ao.id, Action="Sponsored-Get-Request", Tags = { Token = "ethereum" }})
+```
+
+> [Buradakine](https://github.com/0rbit-co/quest/pull/348/commits/acb31a5d8249c16014a789c188d50b7ccf4a32ec) benzer bir çıktınız olacak bunun fotoğrafını alın kaydedin.
+
+> [Buradaki](https://github.com/0rbit-co/quest) repoyu forkluyoruz - forkumuzda 1 klasör açıyoruz, anlatıyorum:
+
+> Aşağıdaki gibi File'a ismi veriyoruz (kendi github ısmınızı girin) sonra / işareti koyunca o bir klasör oluyor
+
+<img width="652" alt="Ekran Resmi 2024-05-18 12 19 40" src="https://github.com/ruesandora/0rbit/assets/101149671/db965b8e-f63f-4a8d-b1b4-3e875bcc4326">
+
+> Klasör içindeki ilk dosyamızın adı `0rbit-Price-Feed.lua` onun içine Visual'daki dosyayı import ediyoruz.
+
+> Klasör içindeki ikinci dosyamızın adı `0rbit-Price-Feed.jpg` veya `0rbit-Price-Feed.png` (türü neyse) 
+
+> Price bot için 2 bilgi olan .lua ve görseli hazırladık ve kaydedelim fork reponuzu.
+
+```console
+# Şimdi Claim edelim yaptığımız işi
+Send({Target= "O3SXXYqQCNTbBedJjsW6wkPnrKFZq8DPLkKjO7zhztE", Action = "Claim", Quest = "Price-Bot", User = "GITHUB"})
+# Github adını düzenleyin en sonda komudun.
+```
+
+![image](https://github.com/ruesandora/0rbit/assets/101149671/81a52b3b-be8e-4dfd-a782-e1f90544a9f4)
+
+
+<h1 align="center"> Parallel Everene Giriş #2 - News Botu </h1>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
