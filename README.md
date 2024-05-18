@@ -248,11 +248,15 @@ Send({ Target = ao.id, Action="Sponsored-Get-Request"})
 
 <img width="928" alt="Ekran Resmi 2024-05-18 12 32 26" src="https://github.com/ruesandora/0rbit/assets/101149671/1302604b-f8aa-4e48-aed8-dd84b01e75e5">
 
+#
+
 > Akabinde pull request kısmında PR çekiyoruz
 
 <img width="1512" alt="Ekran Resmi 2024-05-18 12 32 02" src="https://github.com/ruesandora/0rbit/assets/101149671/f14e1137-e9c4-44fa-a8a5-a123d7da6234">
 
 > [Buradaki](https://github.com/0rbit-co/quest/pull/348) gibi bir PR repomuz oluyor.
+
+#
 
 ```console
 # claim edin News Botu da.
